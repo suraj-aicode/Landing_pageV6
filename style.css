@@ -143,11 +143,11 @@ header {
 }
 
 .left-panel {
-  background: url('/Image/W6.png') no-repeat center center/cover;
+  background: url('Image/W6.png') no-repeat center center/cover;
 }
 
 .left2-panel {
-  background: url('/Image/W7.png') no-repeat center center/cover;
+  background: url('Image/W7.png') no-repeat center center/cover;
 }
 
 

@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Waha Mobility | Contact Us</title>
-  <link rel="stylesheet" href="Contact_Us/Contact2_style.css">
+  <link rel="stylesheet" href="Contact2_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <h1>Contact Us</h1>
-    <p>Reach out using contact us directly.</p>
+    <p>Reach out using the details below.</p>
   </header>
 
   <!-- Back Button -->
@@ -20,34 +21,35 @@
     <i class="fa-solid fa-reply"></i> Back
   </button>
 
-<div class="contact-container">
-  <!-- Left Info -->
-  <div class="contact-info fade-in-left">
-    <div class="logo-box">
-       <img src="Image/vaha logo2.png" alt="Vaha Logo">
-    </div>
-    <h1 class="section-title">Reach Us</h1>
-    <p class="subtitle">We’d love to hear from you. Use the details below to connect with us.</p>
+  <!-- Contact Container -->
+  <div class="contact-container">
+    <!-- Left Info -->
+    <div class="contact-info fade-in-left">
+      <div class="logo-box">
+        <img src="../Image/vaha logo2.png" alt="Vaha Logo">
+      </div>
+      <h2 class="section-title">Reach Us</h2>
+      <p class="subtitle">We’d love to hear from you. Use the details below to connect with us.</p>
 
-    <div class="info-block info-combo">
-    <i class="fa-solid fa-phone"></i>
-    <span>+91 9518761157</span>
-    <span class="vertical-separator"></span>
-    <i class="fas fa-envelope"></i>
-    <span>info@vahamobility.com</span>
-</div>
+      <div class="info-block info-combo">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 9518761157</span>
+        <span class="vertical-separator"></span>
+        <i class="fas fa-envelope"></i>
+        <span>info@vahamobility.com</span>
+      </div>
 
-    <div class="info-block"><i class="fa-solid fa-location-dot"></i> 
-      <span>Office H2, Rajdhani Industrial Complex, 108, MIDC, Bhosari, Pune 411026.</span>
+      <div class="info-block">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Office H2, Rajdhani Industrial Complex, 108, MIDC, Bhosari, Pune 411026.</span>
+      </div>
     </div>
   </div>
-</div>
-
 
   <!-- Footer -->
   <footer class="premium-footer" id="contact">
     <div class="footer-top">
-      <a href="index.html" class="back-to-top">
+      <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i> Back to top
       </a>
     </div>
@@ -68,8 +70,8 @@
       <div class="footer-column">
         <h3>Quick Links</h3>
         <ul class="footer-links">
-          <li><a href="Contact_Us/Contact2_index.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-          <li><a href="About_Us/a_in.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="../Contact_Us/Contact2_index.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          <li><a href="../About_Us/a_index.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
         </ul>
       </div>
       
@@ -78,7 +80,7 @@
         <ul class="footer-links">
           <li><i class="fas fa-envelope"></i> info@vahamobility.com</li>
           <li><i class="fas fa-phone"></i> +91 9518761157</li>
-          <li><i class="fas fa-map-marker-alt"></i>  Office H2, Rajdhani Industrial Complex, 108, MIDC, Bhosari, Pune 411026.</li>
+          <li><i class="fas fa-map-marker-alt"></i> Office H2, Rajdhani Industrial Complex, 108, MIDC, Bhosari, Pune 411026.</li>
           <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
         </ul>
       </div>
@@ -102,11 +104,7 @@
     // Show/Hide floating button
     window.addEventListener("scroll", function () {
       const button = document.getElementById("back-to-top");
-      if (window.scrollY > 300) {
-        button.style.display = "block";
-      } else {
-        button.style.display = "none";
-      }
+      button.style.display = (window.scrollY > 300) ? "block" : "none";
     });
 
     // Floating button click
@@ -115,7 +113,7 @@
     });
 
     // Footer link click
-    document.querySelector(".footer-back-to-top").addEventListener("click", function (e) {
+    document.querySelector(".back-to-top").addEventListener("click", function (e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });

@@ -22,7 +22,6 @@ body, html {
   color: var(--text);
   scroll-behavior: smooth; 
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 /* Language Toggle Button */
